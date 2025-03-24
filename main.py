@@ -1,19 +1,21 @@
-import tkinter
+import Commands
 import turtle
-from turtle import *
-from tkinter import ttk
+from Commands import TurtleMovements
 
-TT = turtle.Turtle()
+Bgcolor = "#000000"
 
-screen = TT.getscreen()
+turtleinstance = TurtleMovements()
 
-TT.penup()
-TT.goto(0,-250)
-TT.left(90)
+ScreenCommands = turtleinstance.GameScreen(Bgcolor=Bgcolor)
 
+turtleinstance.Turtle()
 
 
-screen.mainloop()
+
+
+
+
+
 
 
 
